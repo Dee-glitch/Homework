@@ -1,0 +1,130 @@
+2021-02-11 10:59:44 info: ----------------------------------------------
+2021-02-11 10:59:44 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-11 10:59:44 info: ----------------------------------------------
+2021-02-11 10:59:48 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:00:03 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-02-11 11:01:04 info: Disclaimer turned off
+2021-02-11 11:08:20 info: ----------------------------------------
+2021-02-11 11:08:20 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-02-11 11:08:20 info: ----------------------------------------
+2021-02-11 11:08:23 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:08:36 error: *** ESLint Report ***
+
+ex2-dogYears.js
+  19:7  warning  'dogAge' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-02-11 11:31:34 info: -------------------------------------------
+2021-02-11 11:31:34 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-11 11:31:34 info: -------------------------------------------
+2021-02-11 11:31:38 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:31:52 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  72:22  error  'kids' is defined but never used      no-unused-vars
+  72:28  error  'partner' is defined but never used   no-unused-vars
+  72:37  error  'location' is defined but never used  no-unused-vars
+  72:47  error  'job' is defined but never used       no-unused-vars
+
+✖ 4 problems (4 errors, 0 warnings)
+
+
+2021-02-11 11:32:53 info: -------------------------------------------
+2021-02-11 11:32:53 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-11 11:32:53 info: -------------------------------------------
+2021-02-11 11:32:56 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:52:27 info: --------------------------------------------
+2021-02-11 11:52:27 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-11 11:52:27 info: --------------------------------------------
+2021-02-11 11:52:30 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:52:47 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  30:12  warning  'item' is never reassigned. Use 'const' instead    no-autofix/prefer-const
+  31:11  error    'shoppingList' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2021-02-11 11:53:32 info: --------------------------------------------
+2021-02-11 11:53:32 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-11 11:53:32 info: --------------------------------------------
+2021-02-11 11:53:36 error: *** Unit Test Error Report ***
+
+
+2021-02-11 11:53:48 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  30:12  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  30:12  error    'item' is assigned a value but never used        no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2021-02-11 12:07:45 info: --------------------------------------------
+2021-02-11 12:07:45 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-11 12:07:45 info: --------------------------------------------
+2021-02-11 12:07:48 error: *** Unit Test Error Report ***
+
+
+2021-02-11 12:08:11 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  30:12  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-02-11 12:30:55 info: -------------------------------------------------
+2021-02-11 12:30:55 info: >>> Running Unit Test `ex5-shoppingCartRedux` <<<
+2021-02-11 12:30:55 info: -------------------------------------------------
+2021-02-11 12:30:59 error: *** Unit Test Error Report ***
+
+
+2021-02-11 01:51:22 info: -----------------------------------------
+2021-02-11 01:51:22 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-11 01:51:22 info: -----------------------------------------
+2021-02-11 01:51:26 error: *** Unit Test Error Report ***
+
+
+2021-02-11 01:51:41 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  34:12  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-02-11 01:52:46 info: --------------------------------------------
+2021-02-11 01:52:46 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-11 01:52:46 info: --------------------------------------------
+2021-02-11 01:52:49 error: *** Unit Test Error Report ***
+
+
+2021-02-11 01:53:01 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  30:12  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+

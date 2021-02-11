@@ -1,0 +1,10 @@
+*** Unit Test Error Report ***
+
+
+*** ESLint Report ***
+
+ex2-dogYears.js
+  19:7  warning  'dogAge' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
