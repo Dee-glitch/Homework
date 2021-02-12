@@ -14,15 +14,11 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 function addToShoppingCart(shoppingCart, groceryItem) {
   // TODO complete this function
-  const shoppingCartTwo = ['bananas', 'milk'];
-  shoppingCart.push(groceryItem);
+  const shoppingCartTwo = [...shoppingCart, groceryItem];
   if (shoppingCartTwo.length > 3) {
     shoppingCartTwo.shift();
   }
-  for (let item in shoppingCart) {
-    shoppingCartTwo[item];
-  }
-  console.log(`You bought ${shoppingCartTwo.concat('')}!`);
+  return shoppingCartTwo;
 }
 
 const shoppingCart = ['bananas', 'milk'];
