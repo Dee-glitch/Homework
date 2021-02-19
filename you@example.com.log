@@ -1,0 +1,46 @@
+2021-02-17 10:16:44 info: -------------------------------------------------
+2021-02-17 10:16:44 info: >>> Running Unit Test `ex1-doubleEvenNumbers` <<<
+2021-02-17 10:16:44 info: -------------------------------------------------
+2021-02-17 10:16:49 error: *** Unit Test Error Report ***
+
+
+2021-02-17 11:13:38 info: --------------------------------------------
+2021-02-17 11:13:38 info: >>> Running Unit Test `ex3-lemonAllergy` <<<
+2021-02-17 11:13:38 info: --------------------------------------------
+2021-02-17 11:13:42 error: *** Unit Test Error Report ***
+
+
+2021-02-17 11:13:56 error: *** ESLint Report ***
+
+ex3-lemonAllergy.js
+  26:43  error  Parsing error: Unexpected token 'lemon'
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-02-17 11:32:18 info: --------------------------------------------
+2021-02-17 11:32:18 info: >>> Running Unit Test `ex3-lemonAllergy` <<<
+2021-02-17 11:32:18 info: --------------------------------------------
+2021-02-17 11:32:22 error: *** Unit Test Error Report ***
+
+
+2021-02-17 11:32:35 error: *** ESLint Report ***
+
+ex3-lemonAllergy.js
+  26:43  error  Parsing error: Unexpected token 'lemon'
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-02-19 11:02:52 info: ------------------------------------------------
+2021-02-19 11:02:52 info: >>> Running Unit Test `ex4-publishSubscribe` <<<
+2021-02-19 11:02:52 info: ------------------------------------------------
+2021-02-19 11:02:58 error: *** Unit Test Error Report ***
+
+
+2021-02-19 11:03:34 error: *** Spell Checker Report ***
+
+ex4-publishSubscribe.js:85:10 - Unknown word (revresb)
+ex4-publishSubscribe.js:85:19 - Unknown word (desolc)
+ex4-publishSubscribe.js:85:30 - Unknown word (erawe)
+

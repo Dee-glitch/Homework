@@ -29,8 +29,14 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
+function computeEarnings(Tasks, Rate) {
   // TODO complete this function
+  let taskDuration = mondayTasks.map(
+    (task) => (task.duration / 60) * hourlyRate
+  );
+  let ratesTotal = ratesPerHour.reduce((acc, value) => {
+    return acc + value;
+  });
 }
 
 // example use case 1
