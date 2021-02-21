@@ -31,7 +31,7 @@ const cartForParty = {
 function calculateTotalPrice(groceries) {
   // TODO replace this comment with your code
   let totalAmount = null;
-  for (let item in groceries) {
+  for (const item in groceries) {
     totalAmount = totalAmount + groceries[item];
   }
   return `Total: €${totalAmount}`;

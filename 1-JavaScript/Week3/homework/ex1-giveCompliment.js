@@ -32,7 +32,7 @@ function giveCompliment(myName) {
     'fierce',
   ];
   const result = compliments[Math.floor(Math.random() * compliments.length)];
-  console.log(`You are ${result}, ${myName}!`);
+  return `You are ${result}, ${myName}!`;
 }
 
 // TODO substitute your own name for "HackYourFuture"

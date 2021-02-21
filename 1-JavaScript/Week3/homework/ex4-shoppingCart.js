@@ -27,10 +27,7 @@ function addToShoppingCart(groceryItem) {
   if (shoppingCart.length > 3) {
     shoppingCart.shift();
   }
-  for (let item in shoppingCart) {
-    shoppingCart[item];
-  }
-  console.log(`You bought ${shoppingCart.concat('')}!`);
+  return `You bought ${shoppingCart.concat('')}!`;
 }
 
 addToShoppingCart('chocolate'); // Returns "You bought bananas, milk, chocolate!"
