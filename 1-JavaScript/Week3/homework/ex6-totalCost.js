@@ -21,11 +21,22 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this function
+  chips: 0.95,
+  beers: 9.99,
+  wine: 3.7,
+  cheese: 2.5,
+  crackers: 1.5,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(groceries) {
   // TODO replace this comment with your code
+  let totalAmount = null;
+  for (const item in groceries) {
+    totalAmount = totalAmount + groceries[item];
+  }
+  return `Total: €${totalAmount}`;
 }
+calculateTotalPrice(cartForParty);
 
 // this is one example, you will need to write a different object
 calculateTotalPrice({
