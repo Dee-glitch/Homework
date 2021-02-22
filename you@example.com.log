@@ -44,3 +44,42 @@ ex4-publishSubscribe.js:85:10 - Unknown word (revresb)
 ex4-publishSubscribe.js:85:19 - Unknown word (desolc)
 ex4-publishSubscribe.js:85:30 - Unknown word (erawe)
 
+2021-02-22 05:06:47 info: --------------------------------------------
+2021-02-22 05:06:48 info: >>> Running Unit Test `ex2-mondaysWorth` <<<
+2021-02-22 05:06:48 info: --------------------------------------------
+2021-02-22 05:06:52 error: *** Unit Test Error Report ***
+
+
+2021-02-22 05:07:10 error: *** ESLint Report ***
+
+ex2-mondaysWorth.js
+  32:26  warning  Identifier 'Tasks' is not in camelCase  hyf/camelcase
+  32:26  error    'Tasks' is defined but never used       no-unused-vars
+  32:33  warning  Identifier 'Rate' is not in camelCase   hyf/camelcase
+  32:33  error    'Rate' is defined but never used        no-unused-vars
+
+✖ 4 problems (2 errors, 2 warnings)
+
+
+2021-02-22 05:10:37 info: --------------------------------------------
+2021-02-22 05:10:37 info: >>> Running Unit Test `ex2-mondaysWorth` <<<
+2021-02-22 05:10:37 info: --------------------------------------------
+2021-02-22 05:10:40 error: *** Unit Test Error Report ***
+
+
+2021-02-22 05:10:56 error: *** ESLint Report ***
+
+ex2-mondaysWorth.js
+  32:26  error    'task' is defined but never used             no-unused-vars
+  32:32  warning  Identifier 'HourlyRate' is not in camelCase  hyf/camelcase
+  32:32  error    'HourlyRate' is defined but never used       no-unused-vars
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2021-02-22 05:12:08 info: --------------------------------------------
+2021-02-22 05:12:08 info: >>> Running Unit Test `ex2-mondaysWorth` <<<
+2021-02-22 05:12:08 info: --------------------------------------------
+2021-02-22 05:12:11 error: *** Unit Test Error Report ***
+
+
