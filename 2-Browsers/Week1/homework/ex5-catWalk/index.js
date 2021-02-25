@@ -17,6 +17,31 @@
 -----------------------------------------------------------------------------*/
 function catWalk() {
   // TODO complete this function
+  const img = document.querySelector('img');
+  const img1 = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+  const img2 =
+    'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
+  let left = 0;
+
+  setInterval(frame, 50);
+  function frame() {
+    left = left > 1500 ? 0 : left;
+    img.style.left = left + 'px';
+
+    if (left === 550) {
+      if (img.src !== img2) {
+        setTimeout(function () {
+          img.src = img1;
+          left += 10;
+        }, 5000);
+        img.src = img2;
+      }
+    } else {
+      img.style.left;
+      left += 10;
+    }
+  }
 }
 
 // TODO execute `catWalk` when the browser has completed loading the page
+catWalk();

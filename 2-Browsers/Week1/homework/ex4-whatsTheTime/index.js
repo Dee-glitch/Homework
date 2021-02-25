@@ -7,6 +7,15 @@
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   // TODO complete this function
+  setInterval(timer, 1000);
+
+  function timer() {
+    const currentTime = new Date();
+    document.querySelector(
+      '.clock'
+    ).innerHTML = currentTime.toLocaleTimeString();
+  }
 }
 
 // TODO execute `addCurrentTime` when the browser has completed loading the page
+addCurrentTime();
