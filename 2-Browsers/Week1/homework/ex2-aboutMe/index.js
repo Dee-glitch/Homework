@@ -9,3 +9,13 @@
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
+document.querySelector('body').style.fontFamily = 'Arial, sans-serif';
+
+document.querySelector('#nickname').innerText = 'Deedee';
+document.querySelector('#fav-food').innerText = 'Sushi';
+document.querySelector('#hometown').innerText = 'Mengo';
+
+const list = document.querySelectorAll('li');
+for (const item of list) {
+  item.className = 'list-item';
+}
