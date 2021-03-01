@@ -23,7 +23,7 @@ function catWalk() {
     'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
   let left = 0;
 
-  setInterval(frame, 50);
+  window.addEventListener('load', setInterval(frame, 50));
   function frame() {
     left = left > 1500 ? 0 : left;
     img.style.left = left + 'px';

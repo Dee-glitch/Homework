@@ -7,7 +7,7 @@
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   // TODO complete this function
-  setInterval(timer, 1000);
+  window.addEventListener('load', setInterval(timer, 1000));
 
   function timer() {
     const currentTime = new Date();
