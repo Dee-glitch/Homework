@@ -65,20 +65,20 @@ myPublisher.subscribe(consoleLowerCase);
 
 myPublisher.notify("Let's see what happens here!");
 // Prints the following to the console
-// "Let's see what happens here!"
 // "LET'S SEE WHAT HAPPENS HERE!"
 // "let's see what happens here!"
+// "Let's see what happens here!"
 
 myPublisher.subscribe(function consoleReverse(message) {
-  console.log(message.split('').reverse().join(''));
+  console.log(message.split(' ').reverse().join(' '));
 });
 
-myPublisher.notify('Beware the closed Observer 0_o');
+myPublisher.notify('Alice answers your questions Bob');
 // Prints the following to the console
-// "Beware the closed Observer 0_o!"
-// "BEWARE THE CLOSED OBSERVER 0_O!"
-// "beware the closed observer 0_o!"
-// "!o_0 revresbO desolc eht eraweB"
+// "ALICE ANSWERS YOUR QUESTIONS BOB"
+// "alice answers your questions bob"
+// "Alice answers your questions Bob"
+// "Bob questions your answers Alice"
 
 // ! Do not change or remove the code below
 module.exports = createPublisher;

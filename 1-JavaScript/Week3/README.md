@@ -46,8 +46,7 @@ You know how old your dog is in human years, but what about dog years? Let's cal
 
 Why pay a fortune teller when you can just program your fortune yourself?
 
-1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. Give each array five random
-   values that have to do with the name of the variable.
+1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. Give each array five random values that have to do with the name of the variable.
 
 2. Complete the function `selectRandomly`. This function should take an array as a parameter and return a randomly selected element as its return value.
 
@@ -73,7 +72,7 @@ Let's do some grocery shopping! We're going to get some things to cook dinner wi
 
    - It should take one argument: a grocery item (string)
    - It should add the grocery item to `shoppingCart`. If the number of items is more than three remove the first one in the array.
-   - It should loop through the array in order to list out the items in the shopping cart.
+   - It should iterate through the array in order to list out the items in the shopping cart.
    - It should return a string: "You bought `shoppingCart`!".
 
 3. Call the function three times, each time with a different string as the argument. Use `console.log` to display the results.
@@ -144,5 +143,5 @@ You should do the following:
 
 1. Complete the `filterPrivateData()` function. It should take a single argument: the array of employee records.
 2. It should create a _new_ array, containing employee data without the private data.
-3. Use ES5 [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#object_destructuring) to extract the non-private properties from an employee record (an `object`) and [object literal shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions) to create a new employee record with just the non-private parts.
+3. Use [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#object_destructuring) to extract the non-private properties from an employee record (an `object`) and [object literal shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions) to create a new employee record with just the non-private parts (`name`, `occupation` and `email`).
 4. Return the new array as the return value of the function.
