@@ -34,10 +34,13 @@ function createBookList(books) {
     const img = document.createElement('img');
     if (book.title === 'The Design of Everyday Things') {
       img.src = './assets/the_design_of_everyday_things.jpg';
+      img.alt = 'the design of everyday things';
     } else if (book.title === 'The Most Human Human') {
       img.src = './assets/the_most_human_human.jpg';
+      img.alt = 'the most human human';
     } else if (book.title === 'The Pragmatic Programmer') {
       img.src = './assets/the_pragmatic_programmer.jpg';
+      img.alt = 'the pragmatic programmer';
     }
 
     li.insertBefore(img, paragraph).style.width = '150px';

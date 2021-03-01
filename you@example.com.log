@@ -109,3 +109,12 @@ ex6-gameOfLife/index.js
 - Generated HTML should include an <li> with title and author for each book
 - Generated HTML should include an <img> element for each book
 
+2021-03-01 10:08:31 info: ----------------------------------------
+2021-03-01 10:08:31 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-03-01 10:08:31 info: ----------------------------------------
+2021-03-01 10:08:43 error: *** Unit Test Error Report ***
+
+- Generated HTML should contain a <ul> with 3 <li> elements
+- Generated HTML should include an <li> with title and author for each book
+- Generated HTML should include an <img> element for each book
+
