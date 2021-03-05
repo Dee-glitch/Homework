@@ -18,8 +18,8 @@
 function catWalk() {
   // TODO complete this function
   const img = document.querySelector('img');
-  const img1 = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
-  const img2 =
+  const catWalkImg = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+  const catDanceImg =
     'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
   let left = 0;
 
@@ -29,12 +29,12 @@ function catWalk() {
     img.style.left = left + 'px';
 
     if (left === 550) {
-      if (img.src !== img2) {
+      if (img.src !== catDanceImg) {
         setTimeout(function () {
-          img.src = img1;
+          img.src = catWalkImg;
           left += 10;
         }, 5000);
-        img.src = img2;
+        img.src = catDanceImg;
       }
     } else {
       img.style.left;
