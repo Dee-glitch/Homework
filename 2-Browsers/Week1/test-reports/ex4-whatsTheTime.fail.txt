@@ -1,0 +1,3 @@
+*** Unit Test Error Report ***
+
+- whatsTheTime should use `window.onload` or `window.addEventListener`

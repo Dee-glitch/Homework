@@ -20,6 +20,45 @@
 
 function createBookList(books) {
   // your code goes in here, return the ul element
+  const list = document.createElement('ul');
+  document.body.appendChild(list);
+
+  for (const book of books) {
+    const li = document.createElement('li');
+    list.appendChild(li).style.fontSize = '20px';
+
+    const paragraph = document.createElement('p');
+    paragraph.innerText = `${book.title} by "${book.author}"`;
+    li.appendChild(paragraph);
+
+    const img = document.createElement('img');
+    if (book.title === 'The Design of Everyday Things') {
+      img.src = './assets/the_design_of_everyday_things.jpg';
+      img.alt = 'the design of everyday things';
+    } else if (book.title === 'The Most Human Human') {
+      img.src = './assets/the_most_human_human.jpg';
+      img.alt = 'the most human human';
+    } else if (book.title === 'The Pragmatic Programmer') {
+      img.src = './assets/the_pragmatic_programmer.jpg';
+      img.alt = 'the pragmatic programmer';
+    }
+
+    li.insertBefore(img, paragraph).style.width = '150px';
+    Object.assign(li.style, {
+      display: 'flex',
+      alignItems: 'center',
+      width: '25%',
+      listStyle: 'none',
+      padding: '20px',
+      margin: '20px',
+    });
+
+    if (book.alreadyRead === false) {
+      li.style.backgroundColor = 'red';
+    } else {
+      li.style.backgroundColor = 'green';
+    }
+  }
 }
 
 const myBooks = [
@@ -42,4 +81,4 @@ const myBooks = [
 
 const ulElement = createBookList(myBooks);
 
-// document.querySelector('#bookList').appendChild(ulElement);
+document.querySelector('#bookList').appendChild(ulElement);
