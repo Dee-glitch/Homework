@@ -23,12 +23,10 @@ const fruitBasket = [
   'lemon',
 ];
 
-function sanitizeFruitBasket(fruitBasket, 'lemon') {
+function sanitizeFruitBasket(fruitBasket, item) {
   // TODO complete this function
-  const newFruitBasket = fruitBasket.filter(
-    (fruit) => !fruit.includes('lemon')
-  );
-  return newFruitBasket;
+  const newFruitBasket = fruitBasket.filter((fruit) => !fruit.includes(item));
+  return `My mom bought me a fruit basket containing ${newFruitBasket}!`;
 }
 
 console.log(sanitizeFruitBasket(fruitBasket, 'lemon'));

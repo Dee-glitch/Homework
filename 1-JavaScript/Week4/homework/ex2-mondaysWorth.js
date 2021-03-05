@@ -39,7 +39,7 @@ function computeEarnings(task, hourlyRate) {
     return acc + value;
   }, 0);
 
-  return `€${totalEarnings}`;
+  return `€${totalEarnings.toFixed(2)}`;
 }
 
 // example use case 1
