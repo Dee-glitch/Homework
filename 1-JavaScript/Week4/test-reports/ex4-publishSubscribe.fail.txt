@@ -1,8 +1,0 @@
-*** Unit Test Error Report ***
-
-
-*** Spell Checker Report ***
-
-ex4-publishSubscribe.js:85:10 - Unknown word (revresb)
-ex4-publishSubscribe.js:85:19 - Unknown word (desolc)
-ex4-publishSubscribe.js:85:30 - Unknown word (erawe)

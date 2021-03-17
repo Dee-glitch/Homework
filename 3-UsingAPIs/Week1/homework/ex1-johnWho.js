@@ -20,7 +20,22 @@ const getAnonName = (firstName, callback) => {
   }, 1000);
 };
 
-getAnonName('John', console.log);
+
+const getAnonName = firstName => { 
+	return new Promise(resolve, reject) => {
+	setTimeout(() => {
+		if (!firstName) reject(new Error("You didn't pass in a first name!"));
+      
+	const fullName = `${firstName} Doe`;
+
+	resolve(fullName)
+    }, 1000);
+    	
+}
+
+getAnonName('Jane').then(console.log);
+getAnonName().then(console.log);
+
 
 // ! Do not change or remove the code below
 module.exports = getAnonName;

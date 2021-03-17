@@ -1,0 +1,96 @@
+{
+  "node": "v14.15.1",
+  "system": {
+    "manufacturer": "ASUSTeK COMPUTER INC.",
+    "model": "X556UAM"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i5-6200U",
+    "speed": 2.3,
+    "virtualization": true
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "win32",
+    "distro": "Microsoft Windows 10 Home",
+    "release": "10.0.18363"
+  },
+  "blockDevices": [
+    {
+      "name": "C:",
+      "size": "127 GB",
+      "fsType": "ntfs",
+      "physical": "Local"
+    },
+    {
+      "name": "D:",
+      "size": "0 GB",
+      "fsType": "",
+      "physical": "CD/DVD"
+    }
+  ],
+  "vscodeInfo": {
+    "version": "1.54.1",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "auchenberg.vscode-browser-preview",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "burkeholland.simple-react-snippets",
+      "ChakrounAnas.turbo-console-log",
+      "christian-kohler.path-intellisense",
+      "CoenraadS.bracket-pair-colorizer",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "dzhavat.css-flexbox-cheatsheet",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "formulahendry.code-runner",
+      "formulahendry.terminal",
+      "ionutvmi.path-autocomplete",
+      "kgscott.retreon",
+      "msjsdiag.debugger-for-chrome",
+      "naumovs.color-highlight",
+      "Nimda.deepdark-material",
+      "octref.tachyons",
+      "octref.vetur",
+      "PKief.material-icon-theme",
+      "ritwickdey.LiveServer",
+      "sdras.night-owl",
+      "streetsidesoftware.code-spell-checker",
+      "vuetifyjs.vuetify-vscode",
+      "WallabyJs.quokka-vscode",
+      "xabikos.JavaScriptSnippets"
+    ],
+    "userSettings": {
+      "php.validate.executablePath": "on",
+      "editor.minimap.enabled": false,
+      "files.autoSave": "off",
+      "liveServer.settings.donotShowInfoMsg": true,
+      "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "workbench.sideBar.location": "left",
+      "workbench.statusBar.visible": true,
+      "workbench.colorTheme": "Retreon",
+      "window.menuBarVisibility": "default",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnPaste": true,
+      "workbench.iconTheme": "vs-seti",
+      "liveServer.settings.CustomBrowser": "chrome",
+      "gitlens.advanced.messages": {
+        "suppressImproperWorkspaceCasingWarning": true
+      },
+      "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+      },
+      "liveServer.settings.donotVerifyTags": true,
+      "explorer.confirmDragAndDrop": false,
+      "window.zoomLevel": 2
+    }
+  }
+}

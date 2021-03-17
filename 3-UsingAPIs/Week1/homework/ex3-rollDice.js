@@ -10,7 +10,7 @@
 ------------------------------------------------------------------------------*/
 
 // TODO Remove callback and return a promise
-function rollDice(callback) {
+function rollDice(resove, reject) {
   // Compute a random number of rolls (3-10) that the dice MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Dice scheduled for ${randomRollsToDo} rolls...`);
@@ -23,13 +23,13 @@ function rollDice(callback) {
     // Use callback to notify that the dice rolled off the table after 6 rolls
     if (roll > 6) {
       // TODO replace "error" callback
-      callback(new Error('Oops... Dice rolled off the table.'));
+      reject(new Error('Oops... Dice rolled off the table.'));
     }
 
     // Use callback to communicate the final dice value once finished rolling
     if (roll === randomRollsToDo) {
       // TODO replace "success" callback
-      callback(null, value);
+      resolve(null, value);
     }
 
     // Schedule the next roll todo until no more rolls to do
@@ -43,11 +43,11 @@ function rollDice(callback) {
 }
 
 // TODO Refactor to use promise
-rollDice((error, value) => {
+rollDice((reject, resolve) => {
   if (error !== null) {
-    console.log(error.message);
+    reject(error.message);
   } else {
-    console.log(`Success! Dice settled on ${value}.`);
+    resolve(`Success! Dice settled on ${value}.`);
   }
 });
 
