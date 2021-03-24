@@ -20,7 +20,8 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 function rollTheDices() {
   // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+  const promiseArray = dices.map((dice) => rollDice(dice));
+  return Promise.all(promiseArray);
 }
 
 rollTheDices()
@@ -29,3 +30,5 @@ rollTheDices()
 
 // ! Do not change or remove the code below
 module.export = rollTheDices;
+
+/* Because we do not indicate for the promise to stop at the specific event of rolling off the table, so it just keeps executing */
