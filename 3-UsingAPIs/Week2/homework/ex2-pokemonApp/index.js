@@ -21,40 +21,43 @@ return values to pass data back and forth.
 async function fetchData(url) {
   // TODO complete this function
   const response = await fetch(url);
-  const jsonData = await response.json();
-  const results = jsonData.results;
-  return results;
+  const data = await response.json();
+  return data.results;
 }
 
-const select = document.getElementById('select');
-
-async function fetchAndPopulatePokemons(results) {
+function fetchAndPopulatePokemons(data) {
   // TODO complete this function
-  results.forEach((pokemon) => {
+  const select = document.getElementById('select');
+  data.forEach((pokemon) => {
     const option = document.createElement('option');
     select.appendChild(option);
+    option.value = pokemon.name;
     option.textContent = pokemon.name;
   });
-  if (select.value === pokemon.name) {
-    return fetchImage(pokemon.name);
+  select.addEventListener('change', fetchImage);
+}
+
+async function fetchImage() {
+  // TODO complete this function
+  const response = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${select.value}`
+  );
+  const data = await response.json();
+  const img = document.createElement('img');
+  img.src = data.sprites.front_default;
+  document.body.appendChild(img);
+  img.style.width = '200px';
+}
+
+async function main() {
+  // TODO complete this function
+  try {
+    const data = await fetchData(
+      'https://pokeapi.co/api/v2/pokemon/?limit=151'
+    );
+    fetchAndPopulatePokemons(data);
+  } catch (error) {
+    console.log(error);
   }
-}
-
-function fetchImage(name) {
-  // TODO complete this function
-  const pokeResponse = `https://pokeapi.co/api/v2/pokemon/${name}`;
-  fetch(pokeResponse)
-    .then((response) => response.json())
-    .then((jsonData) => {
-      const pokeImage = document.createElement('img');
-      document.body.appendChild(pokeImage);
-      const imgSource = jsonData.sprites.front_default;
-      pokeImage.src = imgSource;
-      pokeImage.style.width = '300px';
-    });
-}
-
-function main() {
-  // TODO complete this function
 }
 window.addEventListener('load', main);

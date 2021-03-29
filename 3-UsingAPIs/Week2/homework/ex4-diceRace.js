@@ -32,7 +32,8 @@ async function main() {
 }
 main();
 
-// I have to add a reason why ..............
+// Might be because promise.race returns the fastest resolved promise,
+// this does not stop the other promises from running.
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
