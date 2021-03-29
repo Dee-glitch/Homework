@@ -18,18 +18,43 @@ Complete the four functions provided in the starter `index.js` file:
 Try and avoid using global variables. Instead, use function parameters and 
 return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
+async function fetchData(url) {
   // TODO complete this function
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  const results = jsonData.results;
+  return results;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
+const select = document.getElementById('select');
+
+async function fetchAndPopulatePokemons(results) {
   // TODO complete this function
+  results.forEach((pokemon) => {
+    const option = document.createElement('option');
+    select.appendChild(option);
+    option.textContent = pokemon.name;
+  });
+  if (select.value === pokemon.name) {
+    return fetchImage(pokemon.name);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
+function fetchImage(name) {
   // TODO complete this function
+  const pokeResponse = `https://pokeapi.co/api/v2/pokemon/${name}`;
+  fetch(pokeResponse)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      const pokeImage = document.createElement('img');
+      document.body.appendChild(pokeImage);
+      const imgSource = jsonData.sprites.front_default;
+      pokeImage.src = imgSource;
+      pokeImage.style.width = '300px';
+    });
 }
 
 function main() {
   // TODO complete this function
 }
+window.addEventListener('load', main);
