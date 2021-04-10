@@ -13,12 +13,27 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 function rollTheDices() {
   const dices = [1, 2, 3, 4, 5];
   // TODO complete this function; use Promise.race() and rollDice()
+  const promiseArray = dices.map((dice) => rollDice(dice));
+  return Promise.race(promiseArray);
 }
-
-// Refactor this function to use async/await and try/catch
 rollTheDices()
   .then((results) => console.log('Resolved!', results))
   .catch((error) => console.log('Rejected!', error.message));
 
+// Refactor this function to use async/await and try/catch
+async function main() {
+  try {
+    const response = await rollTheDices();
+    const results = await response;
+    console.log('Resolved!', results);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
+}
+main();
+
+// Might be because promise.race returns the fastest resolved promise,
+// this does not stop the other promises from running.
+
 // ! Do not change or remove the code below
-module.export = rollTheDices;
+module.exports = rollTheDices;

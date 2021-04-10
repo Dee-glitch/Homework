@@ -1,0 +1,67 @@
+2021-03-24 11:13:06 info: ---------------------------------------------
+2021-03-24 11:13:06 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-24 11:13:06 info: ---------------------------------------------
+2021-03-24 11:13:19 error: *** Unit Test Error Report ***
+
+- programmerFun should use async/wait
+
+2021-03-24 11:13:34 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  33:22  error  'data' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-03-24 11:23:08 info: ---------------------------------------------
+2021-03-24 11:23:08 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-24 11:23:08 info: ---------------------------------------------
+2021-03-24 11:23:16 info: All unit tests passed.
+2021-03-24 11:23:41 info: All steps were completed successfully
+2021-03-26 09:06:33 info: -----------------------------------------
+2021-03-26 09:06:33 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-26 09:06:33 info: -----------------------------------------
+2021-03-26 09:06:42 info: All unit tests passed.
+2021-03-26 09:07:11 info: All steps were completed successfully
+2021-03-26 09:42:07 info: ----------------------------------------
+2021-03-26 09:42:07 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-26 09:42:07 info: ----------------------------------------
+2021-03-26 09:42:12 info: All unit tests passed.
+2021-03-26 09:42:38 info: All steps were completed successfully
+2021-03-26 01:34:03 info: --------------------------------------------
+2021-03-26 01:34:03 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2021-03-26 01:34:03 info: --------------------------------------------
+2021-03-26 01:34:03 warn: A unit test file was not provided.
+2021-03-26 01:34:29 info: All steps were completed successfully
+2021-03-29 10:14:19 info: ------------------------------------------
+2021-03-29 10:14:19 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-29 10:14:19 info: ------------------------------------------
+2021-03-29 10:14:33 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    9:8  error  <button> is missing required "type" attribute  element-required-attributes
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-29 10:14:51 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  43:42  error  'select' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-03-29 10:17:17 info: ------------------------------------------
+2021-03-29 10:17:17 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-29 10:17:17 info: ------------------------------------------
+2021-03-29 10:17:27 info: All unit tests passed.
+2021-03-29 10:17:41 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  43:42  error  'select' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+

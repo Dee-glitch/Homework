@@ -99,7 +99,7 @@ rollDice((error, value) => {
 
 > A couple of comments about this code:
 >
-> - In real life, a dice, when thrown, will autonomously run its course until it comes to a complete standstill, abiding the laws of nature. How long it will roll depends on the force of the throw. In our simulation that "force" is represented by the random value assigned to `randomRollsToDo`. As if subjected to the laws of nature, we insist that our simulated dices continue to roll until they have reached their randomly assigned number of rolls-to-do.
+> - In real life, a dice, when thrown, will autonomously run its course until it comes to a complete standstill, abiding the laws of nature. How long it will roll depends on the force of the throw. In our simulation that "force" is represented by the random value assigned to `randomRollsToDo`. As if subjected to the laws of nature, we insist that our simulated dices continue to roll until they have reached their randomly assigned number of rolls-to-do, even after dropping of the table.
 > - The "error first" callback format used in this example, using two parameters, is commonly used in Node.js. To communicate back _failure_, the callback is called with a _single_ argument: the error value (usually a JavaScript `Error` object). In the _successful_ case the callback is called with _two_ arguments, the first one being `null` (i.e., no error) and the second one containing the actual result.
 
 Here is what the output could look like for a successful throw:
@@ -245,3 +245,11 @@ We have also provided some code that demonstrates how to handle throwing a singl
 The provided `rollDice()` function logs the value of a dice as it rolls, time-stamped with the time of day (with millisecond accuracy) to the console. Once you have successfully completed this exercise you will notice that the intermediate messages are output in bursts of up to five at a time as the dices finish rolling asynchronously.
 
 You may also notice that, in the case of a rejected promise, dices that have not yet finished their roll continue to do so. Can you explain why? Please add your answer as a comment to the end of the exercise file.
+
+### Exercise 5: Throw dices sequentially
+
+#### File: `ex5-pokerDiceChain.js`
+
+In the previous exercise we used `Promise.all()` to throw five dices in one go. In the current exercise we will be throwing five dices one at a time, waiting for a dice to settle before throwing the next one. Of course, we still consider a dice rolling off the table to be a showstopper.
+
+To throw the dices sequentially we will be using a _promise chain_. Your job is to expand the given promise chain to include five dices.
